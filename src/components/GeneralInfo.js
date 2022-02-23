@@ -41,15 +41,15 @@ class GeneralInfo extends Component{
                 <img src={apllicant_img} alt='Applicant'></img>
                 <form onSubmit={this.updateGeneralInfo}>
                     <div className='name-jobtitle'>
-                        {editing?(<div><span>Name: </span> <input type="text" name='name' defaultValue={name}/></div>):(<h1>{name}</h1>)}
-                        {editing?(<div><span>Job Title: </span><input type="text" name='job_title' defaultValue={job_title}/></div>):(<h2>{job_title}</h2>)}
+                        {editing?(<div><label>Name: </label> <input type="text" name='name' defaultValue={name}/></div>):(<h1>{name}</h1>)}
+                        {editing?(<div><label>Job Title: </label><input type="text" name='job_title' defaultValue={job_title}/></div>):(<h2>{job_title}</h2>)}
                     </div>
                     <div className='personal-info'>
-                    {editing?(<div><span>Email: </span><input type="email" name="email" defaultValue={email}/></div>):(<PersonalInfo text={email} alt_text="email icon" icon_image=""></PersonalInfo>)} 
-                    {editing?(<div><span>Phone Number: </span><input type="number" name="phone_number" defaultValue={phone_number}/></div>):(<PersonalInfo text={phone_number} alt_text="phone number icon" icon_image=""></PersonalInfo>)} 
-                    {editing?(<div><span>City: </span><input type="text" name="city" defaultValue={city}/></div>):(<PersonalInfo text={city} alt_text="location icon" icon_image=""></PersonalInfo>)}
+                        {editing?(<div><label>Email: </label><input type="email" name="email" defaultValue={email}/></div>):(<PersonalInfo text={email} alt_text="email icon" icon_image=""></PersonalInfo>)} 
+                        {editing?(<div><label>Phone Number: </label><input type="number" name="phone_number" defaultValue={phone_number}/></div>):(<PersonalInfo text={phone_number} alt_text="phone number icon" icon_image=""></PersonalInfo>)} 
+                        {editing?(<div><label>City: </label><input type="text" name="city" defaultValue={city}/></div>):(<PersonalInfo text={city} alt_text="location icon" icon_image=""></PersonalInfo>)}
                     </div>
-                    {editing?(<div><span>Description: </span><input type="text" name='description' defaultValue={description}/></div>):(<p>{description}</p>)}
+                    {editing?(<div><label>Description: </label><input type="text" name='description' defaultValue={description}/></div>):(<p>{description}</p>)}
                     {editing?(<input type="submit" value="Update"/>):(<button onClick={this.editGeneralInfo}>Edit</button>)}
                 </form>
             </header>    

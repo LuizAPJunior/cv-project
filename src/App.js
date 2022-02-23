@@ -1,5 +1,6 @@
 
-import React,{Component} from 'react';
+import React from 'react';
+import EducationalExperience from './components/EducationalExperience';
 import GeneralInfo from './components/GeneralInfo';
 
 class App extends React.Component{
@@ -8,7 +9,11 @@ class App extends React.Component{
   }
   render(){
     return(
-      <GeneralInfo/>
+      <div>
+        <GeneralInfo/>
+        <EducationalExperience/>
+      </div>
+     
     );
   }
 }
