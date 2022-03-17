@@ -1,0 +1,42 @@
+.education, .work{
+    margin-bottom: 1rem;
+}
+
+.work-info, .ed-info{
+    display: flex;
+    
+}
+
+input[type='submit'], button{
+    align-self: flex-start;
+    padding: .25em .5em;
+    border-radius: 5px;
+}
+
+button{
+    background: #fff;
+    border: 1px solid #334155;
+    color: #334155;
+}
+
+input[type='submit']{
+    background: #334155;
+    border: none;
+    color: #fff;
+}
+
+.work button, .education button{
+    margin-left: auto;
+}
+
+.work input[type='submit'], .education input[type='submit']{
+    margin-left: auto;
+}
+
+
+input[type='submit']:hover, button:hover{
+    cursor: pointer;
+    background: #334155;
+    
+    color:#fff;
+}

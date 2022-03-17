@@ -3,7 +3,7 @@ import React from 'react';
 import EducationalExperience from './components/EducationalExperience';
 import GeneralInfo from './components/GeneralInfo';
 import WorkExpGeneral from './components/WorkExpGeneral';
-
+import './/assets/css/App.css';
 
 class App extends React.Component{
   constructor(props){
@@ -11,10 +11,12 @@ class App extends React.Component{
   }
   render(){
     return(
-      <div>
+      <div className='cvbody'>
         <GeneralInfo/>
-        <EducationalExperience/>
-        <WorkExpGeneral/>
+        <div className="exp">
+          <EducationalExperience/>
+          <WorkExpGeneral/>
+        </div>
       </div>
      
     );
