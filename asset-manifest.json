@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/cv-project/static/css/main.a6cfaeab.css",
+    "main.js": "/cv-project/static/js/main.162eff36.js",
+    "static/media/Roboto-Regular.ttf": "/cv-project/static/media/Roboto-Regular.a8d6ac03c7b96b7acb62.ttf",
+    "static/media/Roboto-Bold.ttf": "/cv-project/static/media/Roboto-Bold.75371f53f06181df75f1.ttf",
+    "index.html": "/cv-project/index.html",
+    "static/media/map-marker.svg": "/cv-project/static/media/map-marker.160117797e7971eb64761770ed979ad3.svg",
+    "static/media/email.svg": "/cv-project/static/media/email.3a0d6d8ff2545747e760687d25591994.svg",
+    "static/media/cellphone.svg": "/cv-project/static/media/cellphone.17e40f9d352b49b8e9f0c9853bcdd39b.svg",
+    "main.a6cfaeab.css.map": "/cv-project/static/css/main.a6cfaeab.css.map",
+    "main.162eff36.js.map": "/cv-project/static/js/main.162eff36.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a6cfaeab.css",
+    "static/js/main.162eff36.js"
+  ]
+}
