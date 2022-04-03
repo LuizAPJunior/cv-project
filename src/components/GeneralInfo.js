@@ -23,21 +23,33 @@ const GeneralInfo = () =>{
 
     const updateGeneralInfo = (e) =>{
         e.preventDefault();
-        setName(e.target[0].value);
-        setJob_title(e.target[1].value);
-        setDescription(e.target[2].value);
-        setEmail(e.target[4].value);
-        setPhone_number(e.target[5].value);
-        setCity(e.target[6].value);
+        setName(e.target[1].value);
+        setJob_title(e.target[2].value);
+        setDescription(e.target[3].value);
+        setEmail(e.target[5].value);
+        setPhone_number(e.target[6].value);
+        setCity(e.target[7].value);
         setEditing(false);
     };
+    
+    const handleImage = (e) =>{
+        if (e.target.files && e.target.files[0]) {
+            let reader = new FileReader();
+            reader.onload = (e) => {
+              setApllicant_img( e.target.result);
+            };
+            reader.readAsDataURL(e.target.files[0]);
+          }
+    }
+
+
 
 
     return(
         <header className='general-info'>
             <form onSubmit={updateGeneralInfo}>
                 <div className='profile-jobtitle'>
-                    <img className='profilePic' id='profilePic' src={apllicant_img} alt='Applicant'></img>
+                    {editing?(<div><label htmlFor="applicant_img">Image</label> <input type="file" name="appllicant_img" id="applicant_img" onChange={handleImage}  /></div>):(<img className='profilePic' id='profilePic' src={apllicant_img} alt='Applicant'></img>)}
                     <div className='name-jobtitle'>
                         {editing?(<div><label htmlFor="name">Name </label> <input type="text" name='name' defaultValue={name}/></div>):(<h1 className='name'>{name}</h1>)}
                         {editing?(<div><label htmlFor="job_title">Job Title</label><input type="text" name='job_title' defaultValue={job_title}/></div>):(<p className='jobtitle'>{job_title}</p>)}
